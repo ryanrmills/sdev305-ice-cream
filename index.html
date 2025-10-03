@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="form-body">
+        <header>
+            <h1>Ice Cream Order<h1>
+        </header>
+
+        <form action="#" id="cream-form" method="get">
+                <fieldset class="personal-info-field">
+                    <legend>Personal Information</legend>
+                    <label  for="fname">Name:</label>
+                    <input type="text" name="fname" id="fname">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+                 </fieldset>
+                 <fieldset class="order-details-field">
+                    <legend>Order details</legend>
+                    <label class="choices-label">
+                        Choose your flavor:
+                        <select>
+                            <option>Vanilla</option>
+                            <option>Chocolate</option>
+                            <option>Strawberry</option>
+                        </select>
+                    </label>
+                    <label class="choices-label">
+                        Choose your cone:
+                        <div>
+                            <label >
+                                <input type="radio">Waffle cone
+                            </label>
+                            <label>
+                                <input type="radio">Sugar cone
+                            </label>
+                            <label>
+                                <input type="radio">Cup
+                            </label>
+                        </div>
+                    </label>
+                    <label class="choices-label">
+                        Toppings:
+                        <div>
+                            <label>
+                                <input type="checkbox">Sprinkles
+                            </label>
+                            <label>
+                                <input type="checkbox">Nuts
+                            </label>
+                            <label>
+                                <input type="checkbox">Cherry
+                            </label>                        <label>
+                                <input type="checkbox">Whipped cream
+                            </label>
+                        </div>
+                    </label>
+                    <label for="comment">Additional comments:</label>
+                        <textarea>
+                            
+                        </textarea>
+                    </label>
+
+                 </fieldset>
+                 <button type="submit">Submit Order</button>
+        </form>
+    </div>
+</body>
+</html>
