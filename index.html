@@ -9,7 +9,7 @@
 <body>
     <div class="form-body">
         <header>
-            <h1>Ice Cream Order<h1>
+            <h1>Ice Cream Order Form</h1>
         </header>
 
         <form action="#" id="cream-form" method="get">
@@ -31,45 +31,30 @@
                             <option>Strawberry</option>
                         </select>
                     </label>
-                    <label class="choices-label">
+                    <label class="choices-label"> 
                         Choose your cone:
-                        <div>
-                            <label >
-                                <input type="radio">Waffle cone
-                            </label>
-                            <label>
-                                <input type="radio">Sugar cone
-                            </label>
-                            <label>
-                                <input type="radio">Cup
-                            </label>
-                        </div>
                     </label>
+                            <div>
+                                <input type="radio" id="waffcone" name = "method">Waffle cone
+                                <input type="radio" id="sugarcone" name = "method">Sugar cone
+                                <input type="radio" id="cup" name = "method">Cup
+                            </div>
                     <label class="choices-label">
                         Toppings:
-                        <div>
-                            <label>
+                    </label>
+                            <div>
                                 <input type="checkbox">Sprinkles
-                            </label>
-                            <label>
                                 <input type="checkbox">Nuts
-                            </label>
-                            <label>
                                 <input type="checkbox">Cherry
-                            </label>                        <label>
                                 <input type="checkbox">Whipped cream
-                            </label>
-                        </div>
-                    </label>
-                    <label for="comment">Additional comments:</label>
+                            </div>
+                    <label id="comment">Additional comments:</label>
                         <textarea>
-                            
                         </textarea>
-                    </label>
-
-                 </fieldset>
-                 <button type="submit">Submit Order</button>
+                </fieldset>
+                <button type="submit">Submit Order</button>
         </form>
     </div>
+
 </body>
 </html>

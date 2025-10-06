@@ -1,10 +1,13 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     background-color: rgb(208, 230, 248);
-    
 }
 
 .form-body {
@@ -29,7 +32,7 @@ body {
 
 .personal-info-field {
     width: 100%;
-    border: 1px solid green;
+    border: 1px solid lightgray;
 }
 
 .personal-info-field label{
@@ -63,7 +66,7 @@ legend{
     display: flex;
     flex-direction: column;
     gap: 1em;
-    border: 1px solid green;
+    border: 1px solid lightgray;
 }
 
 .choices-label {
@@ -85,7 +88,10 @@ legend{
 }
 
 select {
-    height: 100px;
+    height: 35px;
+    background-color:white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
 }
 
 textarea {
@@ -98,5 +104,10 @@ textarea {
     box-shadow: 0px 0px 0px gray;
 }
 
+legend{
+    margin:auto;
+}
 
-
+fieldset{
+    border-radius: 1em;
+}
