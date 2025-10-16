@@ -111,3 +111,8 @@ legend{
 fieldset{
     border-radius: 1em;
 }
+
+.error {
+    color: red;
+    display: none;
+}

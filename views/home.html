@@ -1,60 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/stylesheet.css">
-</head>
-<body>
+    <script src="js/icecream.js"></script>
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+  </head>
+  <body>
     <div class="form-body">
-        <header>
-            <h1>Ice Cream Order Form</h1>
-        </header>
+      <header>
+        <h1>Ice Cream Order Form</h1>
+      </header>
 
-        <form action="#" id="cream-form" method="get">
-                <fieldset class="personal-info-field">
-                    <legend>Personal Information</legend>
-                    <label  for="fname">Name:</label>
-                    <input type="text" name="fname" id="fname">
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email">
-                 </fieldset>
-                 <fieldset class="order-details-field">
-                    <legend>Order details</legend>
-                    <label class="choices-label">
-                        Choose your flavor:
-                        <select>
-                            <option>Vanilla</option>
-                            <option>Chocolate</option>
-                            <option>Strawberry</option>
-                        </select>
-                    </label>
-                    <label class="choices-label"> 
-                        Choose your cone:
-                    </label>
-                            <div>
-                                <input type="radio" id="waffcone" name = "method">Waffle cone
-                                <input type="radio" id="sugarcone" name = "method">Sugar cone
-                                <input type="radio" id="cup" name = "method">Cup
-                            </div>
-                    <label class="choices-label">
-                        Toppings:
-                    </label>
-                            <div>
-                                <input type="checkbox">Sprinkles
-                                <input type="checkbox">Nuts
-                                <input type="checkbox">Cherry
-                                <input type="checkbox">Whipped cream
-                            </div>
-                    <label id="comment">Additional comments:</label>
-                        <textarea>
-                        </textarea>
-                </fieldset>
-                <button type="submit">Submit Order</button>
-        </form>
+      <form action="#" id="cream-form" method="get">
+        <fieldset class="personal-info-field">
+          <legend>Personal Information</legend>
+          <label for="fname">Name:</label>
+          <input type="text" name="fname" id="fname" />
+          <span id="err-fname" class="error"></span>
+          <br />
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" />
+          <span id="err-email" class="error"></span>
+        </fieldset>
+        <fieldset class="order-details-field">
+          <legend>Order details</legend>
+          <label class="choices-label">
+            Choose your flavor:
+            <select>
+              <option>Vanilla</option>
+              <option>Chocolate</option>
+              <option>Strawberry</option>
+            </select>
+          </label>
+          <label class="choices-label"> Choose your cone: </label>
+          <div>
+            <input type="radio" id="waffcone" name="method" />Waffle cone
+            <input type="radio" id="sugarcone" name="method" />Sugar cone
+            <input type="radio" id="cup" name="method" />Cup
+          </div>
+          <span id="err-method" class="error"></span>
+          <label class="choices-label"> Toppings: </label>
+          <div>
+            <input type="checkbox" />Sprinkles <input type="checkbox" />Nuts
+            <input type="checkbox" />Cherry <input type="checkbox" />Whipped
+            cream
+          </div>
+          <span id="err-checkbox" class="error"></span>
+          <label id="comment">Additional comments:</label>
+          <textarea> </textarea>
+        </fieldset>
+        <button type="submit">Submit Order</button>
+      </form>
     </div>
-
-</body>
+  </body>
 </html>
