@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="js/icecream.js"></script>
+    <script src="js/icecream.js" defer></script>
     <link rel="stylesheet" href="styles/stylesheet.css" />
   </head>
   <body>
@@ -18,29 +18,31 @@
           <legend>Personal Information</legend>
           <label for="fname">Name:</label>
           <input type="text" name="fname" id="fname" />
-          <span id="err-fname" class="error"></span>
+          <span id="err-fname" class="error">Please enter a name</span>
           <br />
           <label for="email">Email:</label>
           <input type="text" name="email" id="email" />
-          <span id="err-email" class="error"></span>
+          <span id="err-email" class="error">Please enter your email.</span>
         </fieldset>
         <fieldset class="order-details-field">
           <legend>Order details</legend>
           <label class="choices-label">
             Choose your flavor:
-            <select>
-              <option>Vanilla</option>
-              <option>Chocolate</option>
-              <option>Strawberry</option>
+            <select id="flavor-dropdown">
+              <option value="">Pick a flavor...</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="chocolate">Chocolate</option>
+              <option value="strawberry">Strawberry</option>
             </select>
           </label>
+          <span id="err-flavor" class="error">Please choose a flavor.</span>
           <label class="choices-label"> Choose your cone: </label>
           <div>
             <input type="radio" id="waffcone" name="method" />Waffle cone
             <input type="radio" id="sugarcone" name="method" />Sugar cone
             <input type="radio" id="cup" name="method" />Cup
           </div>
-          <span id="err-method" class="error"></span>
+          <span id="err-method" class="error">Please select a cone.</span>
           <label class="choices-label"> Toppings: </label>
           <div>
             <input type="checkbox" />Sprinkles <input type="checkbox" />Nuts

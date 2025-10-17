@@ -1,30 +1,34 @@
 document.getElementById('cream-form').onsubmit = () => {
-    let firstInput = document.getElementById("fname").value.trim
+    let firstInput = document.getElementById("fname").value.trim();
 
-    let secondInput = document.getElementById("email").value.trim
+    let secondInput = document.getElementById("email").value.trim();
 
-    let flavor = document.getElementsByName("method");
+    let flavorButtons = document.getElementsByName("method");
+
+    let flavorDropdownValue = document.getElementById('flavor-dropdown').value;
+
     let count = 0;
 
-    if (firstInput == "") {
+    if (firstInput === "") {
         document.getElementById("err-fname").style.display = "block"
     }
-    else{
-        console.log("Fname compatible")
-    }
 
-    if (secondInput == "" || secondInput.indexOf("@") === -1) {
+    if (secondInput === "" || secondInput.indexOf("@") === -1) {
         document.getElementById("err-email").style.display = "block";
     }
-    else{
-        console.log("Email compatible")
+
+    if (flavorDropdownValue === ''){
+        document.getElementById('err-flavor').style.display = "block";
     }
 
-    for (let i=0; i < methodButtons.length; i++) {
-        if (methodButtons[i].checked) {
+    for (let i = 0; i < flavorButtons.length; i++) {
+        if (flavorButtons[i].checked) {
             count++;
         }
     }
+
+    
+
     if (count === 0) {
         document.getElementById("err-method").style.display = "block";
         isValid = false;
